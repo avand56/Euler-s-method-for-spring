@@ -18,8 +18,15 @@ for i=1:n-1
     theta(i+1)=theta(i)+(ang_f(i)*dt);
     time(i+1)=time(i)+dt; 
 end
-
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+figure(1)
 plot(time,theta)
 title("Euler's method pendulum")
 xlabel('time')
+ylabel('theta')
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+figure(2)
+plot(ang_f,theta)
+title("Euler's method pendulum")
+xlabel('angular frequency')
 ylabel('theta')
